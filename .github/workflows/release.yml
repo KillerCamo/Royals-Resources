@@ -6,22 +6,14 @@ on:
       - "main"
 
 jobs:
-  pre-release:
-    name: "Test Release"
-    runs-on: "ubuntu-latest"
-
+ build:
+    runs-on: ubuntu-latest
     steps:
-      # ...
-      - name: "Build & test"
-        run: |
-          echo "done!"
-
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: false
-          title: "Development Build"
-          files: |
-            LICENSE.txt
-            *.jar
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.5
+      with:
+        type: 'zip'
+        filename: 'server-resources.zip'
+        exclusions: '*.git* /*node_modules/* .editorconfig'
+        uses: ncipollo/release-action@v1.12.0
