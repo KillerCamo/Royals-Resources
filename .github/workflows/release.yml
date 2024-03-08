@@ -25,4 +25,4 @@ jobs:
         name: "Server Resources Update!"
         artifacts: "release.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
-        tag: "2.0.2"
+        tag: "2.0.${{ github.run_number }}"
