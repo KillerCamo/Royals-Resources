@@ -3,11 +3,11 @@ name: "pre-release"
 on:
   push:
     branches:
-      - "master"
+      - "main"
 
 jobs:
   pre-release:
-    name: "Pre Release"
+    name: "Test Release"
     runs-on: "ubuntu-latest"
 
     steps:
