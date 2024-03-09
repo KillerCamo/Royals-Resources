@@ -9,15 +9,12 @@ jobs:
   zip-files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: vimtor/action-zip@v1.2
+      - name: Zip-Release4cpp
+        uses: darshitsri/zip-release@v3
         with:
-          files: assets
-          dest: server-resources.zip
-      - uses: actions/upload-artifact@v4.3.1
-        with:
-          name: server-resources.zip
-          path: ${{ github.workspace }}/server-resources.zip
+    # Filename for archive
+          filename: server-resources.zip
+    # Base path for archive files
   release:
     needs: zip-files
     runs-on: ubuntu-latest
