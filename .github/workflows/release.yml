@@ -13,8 +13,13 @@ jobs:
       - uses: vimtor/action-zip@v1.2
         with:
           files: assets
-          dest: ${{ github.workspace }}/server-resources.zip
+          dest: server-resources.zip
+      - uses: actions/upload-artifact@v1.1
+        with:
+          name: server-resources
+          path: ${{ github.workspace }}/result.zip
   release:
+    needs: zip-files
     runs-on: ubuntu-latest
     steps:
     - name: Upload Release
