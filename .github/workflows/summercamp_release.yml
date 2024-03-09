@@ -20,5 +20,5 @@ jobs:
           name: "Summercamp Resource Pack Update!"
           artifacts: "summercamp-resources.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: "Summercamp Release ${{ github.run_number }}"
+          tag: "SC-${{ github.run_number }}"
 
