@@ -1,4 +1,4 @@
-vename: "Release Update!"
+name: "Release Update!"
 
 on:
   push:
