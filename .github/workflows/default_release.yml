@@ -17,8 +17,10 @@ jobs:
       - uses: ncipollo/release-action@v1.12.0
         with:
           owner: "KillerCamo"
+          allowUpdates:"true"
+          makeLatest: "true"
           name: "Default Resource Pack Update!"
           artifacts: "server-resources.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: "R-${{ github.run_number }}"
+          tag: "Royals"
 
