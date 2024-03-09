@@ -3,7 +3,7 @@ name: "Release Update!"
 on:
   push:
     branches:
-      - "main"
+      - "default"
 
 jobs:
   zip-files:
