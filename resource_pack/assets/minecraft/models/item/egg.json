@@ -1,0 +1,10 @@
+{
+    "parent": "item/generated",
+          "textures": {
+    "layer0": "minecraft:item/egg"
+  },
+	"overrides": [
+                {"predicate": {"custom_model_data":1}, "model": "royals/krabby_patty_realistic"},
+                {"predicate": {"custom_model_data":2}, "model": "royals/huggy_wuggy_deluxe"}
+	]
+}

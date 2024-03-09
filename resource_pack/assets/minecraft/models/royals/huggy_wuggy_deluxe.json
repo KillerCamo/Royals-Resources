@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "royals_item/we_serve_food_here_sir"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [26, 0, 0],
+			"translation": [0, 6, 3.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [26, 0, 0],
+			"translation": [0, 6, 3.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 3.2, 1.13]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 3.2, 1.13]
+		},
+		"ground": {
+			"translation": [0, 2, 0]
+		},
+		"head": {
+			"rotation": [0, 180, 0],
+			"translation": [0.25, 12.25, -1.75]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}
