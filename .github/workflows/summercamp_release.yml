@@ -19,7 +19,7 @@ jobs:
           owner: "KillerCamo"
           allowUpdates: "true"
           makeLatest: "true"
-          name: "Summercamp Resource Pack Update!"
+          name: "Summercamp Resource Pack!"
           artifacts: "server-resources.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: "Summercamp"
