@@ -9,12 +9,11 @@ jobs:
   zip-files:
     runs-on: ubuntu-latest
     steps:
-      - name: Zip-Release4cpp
-        uses: darshitsri/zip-release@v3
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1.2
         with:
-    # Filename for archive
-          filename: server-resources.zip
-    # Base path for archive files
+          files: assets/minecraft/textures/item/cooked_salmon.png
+          dest: server-resources.zip
   release:
     needs: zip-files
     runs-on: ubuntu-latest
