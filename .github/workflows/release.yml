@@ -14,7 +14,7 @@ jobs:
       uses: thedoctor0/zip-release@0.7.5
       with:
         type: 'zip'
-        path: 'assets'
+        path: 'resource-pack'
         filename: 'server-resources.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
   release:
@@ -23,7 +23,7 @@ jobs:
     - name: Upload Release
       uses: ncipollo/release-action@v1.12.0
       with:
-        name: "Server Resources Update!"
+        name: "Resource Pack Updated!"
         artifacts: "server-resources.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
         tag: "2.0.${{ github.run_number }}"
