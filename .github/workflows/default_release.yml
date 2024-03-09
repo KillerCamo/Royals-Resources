@@ -20,5 +20,5 @@ jobs:
           name: "Default Resource Pack Update!"
           artifacts: "server-resources.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: "2.0.${{ github.run_number }}"
+          tag: "R-${{ github.run_number }}"
 
