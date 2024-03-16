@@ -1,0 +1,1 @@
+To change a painting simply replace an image file with the painting. Minecraft forces the image to make the shape.

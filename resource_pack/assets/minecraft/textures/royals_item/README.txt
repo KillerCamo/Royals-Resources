@@ -1,0 +1,1 @@
+Add custom model data textures here. Make sure the names are lowercase and don't have spaces. They can be named anything
